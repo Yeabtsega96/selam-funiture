@@ -1,0 +1,176 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  flex: 1;
+
+  padding: 2rem;
+
+  background: #fff;
+  border-radius: var(--radius-lg);
+}
+
+.contact-form h3 {
+  margin: 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form .inputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.wrapper label {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+
+.wrapper input,
+.wrapper select,
+.wrapper textarea {
+  width: 100%;
+  display: block;
+
+  padding: 1rem;
+
+  font: inherit;
+  color: var(--text-color);
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+
+  background: var(--bg-color);
+
+  transition:
+    border-color .25s ease,
+    box-shadow .25s ease,
+    background-color .25s ease;
+
+  appearance: none;
+}
+
+.wrapper textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.wrapper input::placeholder,
+.wrapper textarea::placeholder {
+  color: #777;
+}
+
+.wrapper input:hover,
+.wrapper select:hover,
+.wrapper textarea:hover {
+  border-color: rgba(0,0,0,.12);
+}
+
+.wrapper input:focus-visible,
+.wrapper select:focus-visible,
+.wrapper textarea:focus-visible {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(200,155,61,.18);
+}
+
+.wrapper input:invalid:not(:placeholder-shown),
+.wrapper select:invalid,
+.wrapper textarea:invalid:not(:placeholder-shown) {
+  border-color: #d64545;
+}
+
+.contact-form p {
+  margin: 0;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.contact-form p a {
+  color: var(--whatsapp-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.contact-form p a:hover {
+  color: var(--whatsapp-dark);
+}
+
+.contact-form p a:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:768px){
+
+  .contact-form{
+    padding:1.5rem;
+    gap:1.5rem;
+  }
+
+  .contact-form .inputs{
+    grid-template-columns:1fr;
+    gap:1rem;
+  }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:480px){
+
+  .contact-form{
+    padding:1rem;
+    gap:1.25rem;
+  }
+
+  .contact-form form{
+    gap:1.25rem;
+  }
+
+  .wrapper{
+    gap:.45rem;
+  }
+
+  .wrapper label{
+    font-size:.95rem;
+  }
+
+  .wrapper input,
+  .wrapper select,
+  .wrapper textarea{
+    padding:.85rem;
+    font-size:.95rem;
+    border-radius:12px;
+  }
+
+  .wrapper textarea{
+    min-height:130px;
+  }
+
+  .contact-form p{
+    font-size:.95rem;
+  }
+
+}

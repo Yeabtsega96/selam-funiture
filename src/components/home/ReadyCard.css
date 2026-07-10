@@ -1,0 +1,131 @@
+.ready-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+
+  max-width: 850px;
+
+  margin: var(--section-padding) auto;
+  padding: 4rem;
+
+  border-radius: var(--radius-lg);
+
+  background: var(--text-color);
+
+  color: var(--bg-color);
+
+  text-align: center;
+}
+
+/* Subtitle */
+
+.ready-subtitle {
+  margin: 0;
+
+  color: var(--accent-color);
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Heading */
+
+.ready-card h2 {
+  margin: 0;
+
+  color: var(--bg-color);
+
+  text-wrap: balance;
+}
+
+/* Description */
+
+.ready-description {
+  margin: 0;
+
+  max-width: 650px;
+
+  color: var(--secondary-color);
+
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+}
+
+/* Buttons */
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 1.5rem;
+
+  width: 100%;
+}
+
+.btns a {
+  text-decoration: none;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:768px){
+
+  .ready-card{
+    padding:3rem 2rem;
+  }
+
+  .ready-description{
+    font-size:1rem;
+  }
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:480px){
+
+  .ready-card{
+    gap:1.25rem;
+
+    padding:2rem 1.25rem;
+
+    margin-inline:1rem;
+  }
+
+  .ready-subtitle{
+    font-size:.9rem;
+
+    letter-spacing:1px;
+  }
+
+  .ready-description{
+    font-size:.95rem;
+  }
+
+  .btns{
+    flex-direction:column;
+
+    gap:1rem;
+  }
+
+  .btns a{
+    width:100%;
+  }
+
+  .btns button{
+    width:100%;
+  }
+
+}

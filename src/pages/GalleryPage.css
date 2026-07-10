@@ -1,0 +1,87 @@
+/* ===========================
+   Gallery
+=========================== */
+
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  gap: 2rem;
+
+  width: 100%;
+
+  padding: var(--section-padding) 0;
+}
+
+.gallery-section button {
+  align-self: center;
+
+  margin-top: 2rem;
+
+  font-size: clamp(.95rem, 2vw, 1.05rem);
+}
+
+.gallery-section .icon {
+  width: 1.3rem;
+  height: 1.3rem;
+
+  flex-shrink: 0;
+}
+
+/* Screen reader */
+
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+
+  padding:0;
+  margin:-1px;
+
+  overflow:hidden;
+
+  clip:rect(0,0,0,0);
+
+  white-space:nowrap;
+
+  border:0;
+}
+
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:768px){
+
+  .gallery-section{
+    gap:1.5rem;
+    padding-block:2rem;
+  }
+
+  
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:480px){
+
+  .gallery-section{
+    gap:1rem;
+    padding-block:1.5rem;
+  }
+
+  .gallery-section button{
+    margin-top:1rem;
+  }
+
+  .gallery-section .icon{
+    width:1.15rem;
+    height:1.15rem;
+  }
+
+}

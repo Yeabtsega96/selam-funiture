@@ -1,0 +1,203 @@
+.why-us-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  padding: var(--section-padding);
+
+  background: #fff;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.why-us-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: .75rem;
+
+  margin-top: 1rem;
+
+  text-align: center;
+}
+
+.why-us-subtitle {
+  margin: 0;
+
+  color: var(--primary-color);
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.why-us-hero h2 {
+  margin: 0;
+
+  text-wrap: balance;
+}
+
+.why-us-description {
+  margin: 0;
+
+  max-width: 650px;
+
+  color: var(--text-light);
+
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.why-us-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 1.5rem;
+}
+
+.why-us-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  padding: 1.5rem;
+
+  background: var(--bg-color);
+
+  border-radius: var(--radius-lg);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.why-us-card:hover {
+  transform: translateY(-6px);
+}
+
+.icon-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  align-self: flex-start;
+
+  width: 52px;
+  height: 52px;
+
+  background: #ebe3e3;
+
+  border-radius: var(--radius-md);
+
+  transition:
+    background-color .3s ease,
+    color .3s ease;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+
+  color: var(--primary-color);
+
+  transition: color .3s ease;
+
+  flex-shrink: 0;
+}
+
+.why-us-card:hover .icon-span {
+  background: var(--primary-color);
+}
+
+.why-us-card:hover .icon {
+  color: var(--bg-color);
+}
+
+.why-us-card h3 {
+  margin: 0;
+}
+
+.why-us-card p {
+  margin: 0;
+
+  color: var(--text-light);
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:768px){
+
+  .why-us-section{
+    gap:2rem;
+  }
+
+  .why-us-cards{
+    gap:1.25rem;
+  }
+
+  .why-us-description{
+    font-size:1rem;
+  }
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:480px){
+
+  .why-us-section{
+    gap:1.5rem;
+  }
+
+  .why-us-subtitle{
+    font-size:.95rem;
+    letter-spacing:1px;
+  }
+
+  .why-us-description{
+    font-size:.95rem;
+  }
+
+  .why-us-cards{
+    gap:1rem;
+  }
+
+  .why-us-card{
+    gap:1rem;
+    padding:1.25rem;
+  }
+
+  .icon-span{
+    width:46px;
+    height:46px;
+  }
+
+  .icon{
+    width:22px;
+    height:22px;
+  }
+
+  .why-us-card p{
+    font-size:.95rem;
+  }
+
+}

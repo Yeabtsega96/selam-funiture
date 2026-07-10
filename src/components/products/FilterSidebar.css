@@ -1,0 +1,61 @@
+.filter-sidebar {
+  width: 100%;
+  max-width: 260px;
+
+  background: #fff;
+
+  padding: 1.5rem;
+
+  border-radius: var(--radius-md);
+
+  position: sticky;
+  top: 100px;
+
+  align-self: flex-start;
+}
+
+.filter-group h3 {
+  margin-bottom: 1rem;
+}
+
+.filter-sidebar input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: .75rem;
+}
+
+.price-range span {
+  color: var(--text-light);
+  font-size: .9rem;
+}
+
+
+
+@media (max-width: 992px) {
+
+  .filter-sidebar {
+    max-width: 220px;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .filter-sidebar {
+    position: static;
+
+    max-width: 100%;
+    width: 100%;
+
+    padding: 1rem;
+  }
+
+}

@@ -1,0 +1,38 @@
+.products-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: var(--section-padding);
+}
+
+.product-cards {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Large tablets */
+@media (max-width: 992px) {
+  .products-section {
+    gap: 1.5rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .products-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .product-cards {
+    width: 100%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .products-section {
+    padding-inline: 1rem;
+    gap: 1.5rem;
+  }
+}

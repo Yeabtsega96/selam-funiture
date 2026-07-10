@@ -1,0 +1,150 @@
+.footer {
+  background: var(--text-color);
+  color: #fff;
+  padding-top: 4rem;
+}
+
+.footer-container {
+  width: min(1200px, 90%);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-description {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+.footer-title {
+  margin-bottom: 1.3rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  transition: .3s;
+}
+
+.footer-links a:hover {
+  color: white;
+  padding-left: 6px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: .8rem;
+
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.footer-icon {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer-bottom {
+  width: min(1200px, 90%);
+  margin: 4rem auto 0;
+
+  border-top: 1px solid rgba(255,255,255,.1);
+
+  padding: 1.5rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  color: var(--text-light);
+}
+
+.footer-credit {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-credit a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  color: var(--accent-color);
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 992px) {
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-contact li {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-credit {
+    justify-content: center;
+  }
+
+}

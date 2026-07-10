@@ -1,0 +1,46 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo span {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1rem;
+}
+
+.selam {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.white {
+  color: var(--text-color)
+}
+
+.black {
+  color: var(--bg-color);
+}
+
+.furniture {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--accent-color);
+}

@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  /* Colors */
+  --primary-color: #8B5E3C;
+  --primary-hover: #734c2f;
+
+  --secondary-color: #cec8c2;
+  --secondary-hover: #f3eee9;
+
+  --accent-color: #C89B5D;
+  --accent-hover: #af803f;
+
+  --text-color: #2E2E2E;
+  --text-light: #666;
+  --white: #fff;
+
+  --whatsapp-color: #25D366;
+  --whatsapp-dark: #075E54;
+
+  --border-color: #ddd;
+  --bg-color: #f7f0f7;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+  --shadow-md: 0 6px 18px rgba(0,0,0,.12);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  /* Transition */
+  --transition: .3s ease;
+
+  /* Max Width */
+  --container-width: 1200px;
+
+    /* ===========================
+   SPACING (FIXED)
+=========================== */
+
+  --section-padding: clamp(40px, 5vw, 80px);
+  --container-padding: clamp(16px, 4vw, 80px);
+}
+
+
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: var(--text-light);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+.container {
+  width: min(90%, var(--container-width));
+  margin-inline: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
