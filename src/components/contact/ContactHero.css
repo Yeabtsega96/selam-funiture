@@ -11,6 +11,7 @@
   text-align: center;
 
   background-color: #fff;
+  overflow: hidden;
 }
 
 .hero-subtitle {
@@ -35,12 +36,12 @@
   max-width: 12ch;
 }
 
-.hero-description {
+.contact-hero .hero-description {
   max-width: 700px;
 
   margin: 0;
 
-  color: var(--text-light);
+  color: var(--text-color);
 
   font-size: 1.25rem;
   line-height: 1.7;

@@ -83,7 +83,6 @@ const ContactForm = () => {
             <select
               id="subject"
               name="subject"
-              required
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
             >

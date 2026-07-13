@@ -2,7 +2,7 @@
 
   padding: clamp(2rem, 5vw, 3rem) var(--section-padding);
 
-  min-height: 320px;
+  min-height: 40vh;
 
   display: flex;
   flex-direction: column;
@@ -30,6 +30,10 @@
 
 /* BREADCRUMB */
 
+.breadcrumb {
+  align-self: self-start;
+}
+
 .breadcrumb ul {
 
   display: flex;
@@ -53,7 +57,7 @@
 
   color: var(--bg-color);
 
-  font-size: .95rem;
+  font-size: 1.15rem;
 
 }
 
@@ -160,5 +164,35 @@
 
   }
 
+
+}
+
+
+/* ==========================
+   Motion Improvements
+========================== */
+
+
+.products-hero-content h1 {
+
+  transform-origin:center;
+
+}
+
+
+/* Smooth breadcrumb interaction */
+
+.breadcrumb li a {
+
+  display:inline-block;
+
+}
+
+
+/* Slight premium hover feeling */
+
+.products-hero {
+
+  overflow:hidden;
 
 }

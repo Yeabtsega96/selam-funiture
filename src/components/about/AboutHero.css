@@ -3,18 +3,19 @@
   align-items: center;
   justify-content: center;
 
-  min-height: 50vh;
+  min-height: 40vh;
 
   padding: var(--section-padding);
 
   text-align: center;
 
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: var(--text-color);
   background-image: url("../../assets/images/bedroom-fullpacage.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
+  overflow: hidden;
 }
 
 .about-hero-content {
@@ -39,7 +40,7 @@
 
   color: #fff;
 
-  max-width: 12ch;
+  max-width: 14ch;
   margin-inline: auto;
 
   line-height: 1.15;
